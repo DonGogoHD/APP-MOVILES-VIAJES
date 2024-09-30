@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_second">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pant3"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/textViewNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre: "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:id="@+id/textViewApellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellido: "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:id="@+id/textViewRUT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RUT: "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:id="@+id/textViewdestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destino de viaje: "
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/editTextitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viaje de ida"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/milkcrea"/>
+
+            <EditText
+                android:id="@+id/editTextNombrelineaerea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre linea aerea"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/editTextCiudadembarque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ciudad de embarque"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/editTextValorpasaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor del pasaje"
+                android:textStyle="bold"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/editTextitulo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Viaje de vuelta"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/milkcrea"/>
+
+            <EditText
+                android:id="@+id/editTextCiudadembarque2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ciudad de embarque"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/editTextValorpasaje2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor del pasaje de regreso"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:minHeight="48dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/blue"
+            />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/red"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

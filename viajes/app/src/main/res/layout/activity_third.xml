@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_third">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pant2"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/editTextitulo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOLETO DIGITAL"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/milkcrea"/>
+
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewRUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RUT: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewCiudadEmbarqueIda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad de embarque (ida): "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewValorPasajeIda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor pasaje (ida): "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewCiudadEmbarqueVuelta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ciudad de embarque (vuelta): "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewValorPasajeVuelta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor pasaje (vuelta): "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalNeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total neto: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewIVA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IVA (19%): "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewTotalPagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total a pagar (neto + IVA): "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/buttonInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver al inicio"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/red"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/travel"
+            android:padding="16dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
